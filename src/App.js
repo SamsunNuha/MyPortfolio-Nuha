@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import HomeContent from './components/HomeContent';
+import Home_Contents from './components/Home_Contents';
 import SocialBar from './components/SocialBar';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <HomeContent />
+      <Home_Contents />
       <SocialBar />
       <About />
       <Skills />

@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import Home_Content from './components/Home_Content';
+import HomeContent from './components/HomeContent';
 import SocialBar from './components/SocialBar';
 import About from './components/About';
 import Skills from './components/Skills';

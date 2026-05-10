@@ -14,22 +14,22 @@ import {
 import logo from "../assets/logo.png";
 import ResumePDF from "../assets/resume.pdf";
 
+const navItems = [
+  { name: "Home", icon: <FaHome />, id: "home" },
+  { name: "About", icon: <FaUser />, id: "about" },
+  { name: "My Skills", icon: <FaTools />, id: "my-skills" },
+  { name: "Projects", icon: <FaProjectDiagram />, id: "projects" },
+  { name: "Certifications", icon: <FaMedal />, id: "feats" },
+  {
+    name: "Resume",
+    icon: <FaFileAlt />,
+    link: ResumePDF
+  },
+];
+
 const Header = () => {
   const [active, setActive] = useState("Home");
   const [sideOpen, setSideOpen] = useState(false);
-
-  const navItems = [
-    { name: "Home", icon: <FaHome />, id: "home" },
-    { name: "About", icon: <FaUser />, id: "about" },
-    { name: "My Skills", icon: <FaTools />, id: "my-skills" },
-    { name: "Projects", icon: <FaProjectDiagram />, id: "projects" },
-    { name: "Certifications", icon: <FaMedal />, id: "feats" },
-    {
-      name: "Resume",
-      icon: <FaFileAlt />,
-      link: ResumePDF
-    },
-  ];
 
   // Scroll to section
   const scrollToSection = (item) => {
@@ -66,7 +66,7 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [navItems]);
+  }, []);
 
   return (
     <>

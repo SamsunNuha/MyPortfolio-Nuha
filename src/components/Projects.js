@@ -152,7 +152,7 @@ const Projects = () => {
                   <SwiperSlide key={i}>
                     <img
                       src={img}
-                      alt={`${project.title} image ${i + 1}`}
+                      alt={`${project.title} ${i + 1}`}
                       className="w-full h-40 object-cover"
                     />
                   </SwiperSlide>

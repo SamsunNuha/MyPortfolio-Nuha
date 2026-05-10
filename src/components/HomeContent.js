@@ -3,7 +3,7 @@ import sampleImg from "../assets/logo.png";
 import HireMe from "../assets/HireMe.jpeg";
 import Friendship from "../assets/friendship.jpeg";
 
-const Home_Content = () => {
+const HomeContent = () => {
   return (
     <section
       id="home"
@@ -54,4 +54,4 @@ const Home_Content = () => {
   );
 };
 
-export default Home_Content;
+export default HomeContent;
